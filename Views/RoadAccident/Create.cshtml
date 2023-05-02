@@ -1,0 +1,258 @@
+﻿@model RodeSafetyTool.Models.RoadAccident
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>RoadAccident</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Severity" class="control-label"></label>
+                <input asp-for="Severity" class="form-control" />
+                <span asp-validation-for="Severity" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="Start_Time" class="control-label"></label>
+                <input asp-for="Start_Time" class="form-control" />
+                <span asp-validation-for="Start_Time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="End_Time" class="control-label"></label>
+                <input asp-for="End_Time" class="form-control" />
+                <span asp-validation-for="End_Time" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="Start_Lat" class="control-label"></label>
+                <input asp-for="Start_Lat" class="form-control" />
+                <span asp-validation-for="Start_Lat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Start_Lng" class="control-label"></label>
+                <input asp-for="Start_Lng" class="form-control" />
+                <span asp-validation-for="Start_Lng" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="End_Lat" class="control-label"></label>
+                <input asp-for="End_Lat" class="form-control" />
+                <span asp-validation-for="End_Lat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="End_Lng" class="control-label"></label>
+                <input asp-for="End_Lng" class="form-control" />
+                <span asp-validation-for="End_Lng" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="Distance" class="control-label"></label>
+                <input asp-for="Distance" class="form-control" />
+                <span asp-validation-for="Distance" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="Number" class="control-label"></label>
+                <input asp-for="Number" class="form-control" />
+                <span asp-validation-for="Number" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Street" class="control-label"></label>
+                <input asp-for="Street" class="form-control" />
+                <span asp-validation-for="Street" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Side" class="control-label"></label>
+                <input asp-for="Side" class="form-control" />
+                <span asp-validation-for="Side" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="City" class="control-label"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="County" class="control-label"></label>
+                <input asp-for="County" class="form-control" />
+                <span asp-validation-for="County" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="State" class="control-label"></label>
+                <input asp-for="State" class="form-control" />
+                <span asp-validation-for="State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Zipcode" class="control-label"></label>
+                <input asp-for="Zipcode" class="form-control" />
+                <span asp-validation-for="Zipcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Country" class="control-label"></label>
+                <input asp-for="Country" class="form-control" />
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Timezone" class="control-label"></label>
+                <input asp-for="Timezone" class="form-control" />
+                <span asp-validation-for="Timezone" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="Airport_Code" class="control-label"></label>
+                <input asp-for="Airport_Code" class="form-control" />
+                <span asp-validation-for="Airport_Code" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="Weather_Timestamp" class="control-label"></label>
+                <input asp-for="Weather_Timestamp" class="form-control" />
+                <span asp-validation-for="Weather_Timestamp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Temperature" class="control-label"></label>
+                <input asp-for="Temperature" class="form-control" />
+                <span asp-validation-for="Temperature" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wind_Chill" class="control-label"></label>
+                <input asp-for="Wind_Chill" class="form-control" />
+                <span asp-validation-for="Wind_Chill" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Humidity" class="control-label"></label>
+                <input asp-for="Humidity" class="form-control" />
+                <span asp-validation-for="Humidity" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="Pressure" class="control-label"></label>
+                <input asp-for="Pressure" class="form-control" />
+                <span asp-validation-for="Pressure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Visibility" class="control-label"></label>
+                <input asp-for="Visibility" class="form-control" />
+                <span asp-validation-for="Visibility" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wind_Direction" class="control-label"></label>
+                <input asp-for="Wind_Direction" class="form-control" />
+                <span asp-validation-for="Wind_Direction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wind_Speed" class="control-label"></label>
+                <input asp-for="Wind_Speed" class="form-control" />
+                <span asp-validation-for="Wind_Speed" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="Precipitation" class="control-label"></label>
+                <input asp-for="Precipitation" class="form-control" />
+                <span asp-validation-for="Precipitation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weather_Condition" class="control-label"></label>
+                <input asp-for="Weather_Condition" class="form-control" />
+                <span asp-validation-for="Weather_Condition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amenity" class="control-label"></label>
+                <input asp-for="Amenity" class="form-control" />
+                <span asp-validation-for="Amenity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bump" class="control-label"></label>
+                <input asp-for="Bump" class="form-control" />
+                <span asp-validation-for="Bump" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Crossing" class="control-label"></label>
+                <input asp-for="Crossing" class="form-control" />
+                <span asp-validation-for="Crossing" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="Give_Way" class="control-label"></label>
+                <input asp-for="Give_Way" class="form-control" />
+                <span asp-validation-for="Give_Way" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Junction" class="control-label"></label>
+                <input asp-for="Junction" class="form-control" />
+                <span asp-validation-for="Junction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="No_Exit" class="control-label"></label>
+                <input asp-for="No_Exit" class="form-control" />
+                <span asp-validation-for="No_Exit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Railway" class="control-label"></label>
+                <input asp-for="Railway" class="form-control" />
+                <span asp-validation-for="Railway" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="Roundabout" class="control-label"></label>
+                <input asp-for="Roundabout" class="form-control" />
+                <span asp-validation-for="Roundabout" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Station" class="control-label"></label>
+                <input asp-for="Station" class="form-control" />
+                <span asp-validation-for="Station" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stop" class="control-label"></label>
+                <input asp-for="Stop" class="form-control" />
+                <span asp-validation-for="Stop" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Traffic_Calming" class="control-label"></label>
+                <input asp-for="Traffic_Calming" class="form-control" />
+                <span asp-validation-for="Traffic_Calming" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Traffic_Signal" class="control-label"></label>
+                <input asp-for="Traffic_Signal" class="form-control" />
+                <span asp-validation-for="Traffic_Signal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Turning_Loop" class="control-label"></label>
+                <input asp-for="Turning_Loop" class="form-control" />
+                <span asp-validation-for="Turning_Loop" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="Sunrise_Sunset" class="control-label"></label>
+                <input asp-for="Sunrise_Sunset" class="form-control" />
+                <span asp-validation-for="Sunrise_Sunset" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="Civil_Twilight" class="control-label"></label>
+                <input asp-for="Civil_Twilight" class="form-control" />
+                <span asp-validation-for="Civil_Twilight" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="Nautical_Twilight" class="control-label"></label>
+                <input asp-for="Nautical_Twilight" class="form-control" />
+                <span asp-validation-for="Nautical_Twilight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Astronomical_Twilight" class="control-label"></label>
+                <input asp-for="Astronomical_Twilight" class="form-control" />
+                <span asp-validation-for="Astronomical_Twilight" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
